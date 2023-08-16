@@ -74,14 +74,10 @@ jobs:
       - name: Set up Android SDK
         uses: actions/setup-java@v2
         with:
-          java-version: '1.8'
+          java-version: '11'
 
       - name: Grant execute permission to gradlew
         run: chmod +x ./gradlew
-
-      - name: Generate AAR and APK files
-        if: always()
-        run: ./gradlew assembleDebug
 
       - name: Gradle Build and generating apk files
         if: always()
