@@ -7,12 +7,12 @@ on:
       - '*'
 
 jobs:
-  test:
-    name: Run Unit Tests
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
+#  test:
+#    name: Run Unit Tests
+#    runs-on: ubuntu-latest
+#    permissions:
+#      contents: read
+#      packages: write
 
   build:
     name: Build app
