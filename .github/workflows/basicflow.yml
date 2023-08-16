@@ -53,7 +53,7 @@ jobs:
 
     steps:
       - name: Gradle Unit tests
-        run: ./gradlew app:testDebugUnitTest
+        run: ./gradlew testDebugUnitTest
 
   run_build:
     name: Generate AAR and APK files
