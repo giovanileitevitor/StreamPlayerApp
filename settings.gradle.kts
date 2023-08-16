@@ -9,12 +9,12 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
-    repositoriesMode.set(org.gradle.api.initialization.resolve.RepositoriesMode.PREFER_PROJECT)
     repositories {
         google()
         mavenCentral()
         maven { setUrl("https://jitpack.io") }
-        maven(url = uri("https://oss.sonatype.org/content/repositories/snapshots/"))
+        maven { setUrl("https://oss.sonatype.org/content/repositories/snapshots/") }
+        //maven(url = uri("https://oss.sonatype.org/content/repositories/snapshots/"))
     }
 }
 
